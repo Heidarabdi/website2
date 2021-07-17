@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Playball&family=Roboto+Condensed:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    background-color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+
+}
+.banner{
+  background-image: url('images/2.jpg');
+  height: 30vh;
+  background-position: center;
+  max-width: 207em ;
+  background-repeat: no-repeat;
+}
+ul{
+display: inline-flex;
+flex-wrap: wrap;
+}
+ul li{
+  float: left;
+  list-style-type: none;
+  
+}
+ul li a{
+  text-decoration: none; 
+ color: cornsilk;
+  border: solid 0.5px #E8DDD0;
+  font-family: 'Roboto Condensed', sans-serif;
+  width: 170px;
+  height: 55px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  padding: 15px 49px;
+  font-size: 25px;
+  position: relative;
+  top: 4em;
+  left: 11em;
+}
+ul li a:hover, ul li a:active, ul li a:focus{
+  background-color: #E8DDD0;
+  padding:15px 49px;
+  color: black;
+}
+
+
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+.heading {
+	font-family:  'Playball',Arial, sans-serif;
+	font-size: 4rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: #cde641;
+}
+
+.heading span {
+	display: block;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
+
+#qeyb-gadaal{
+  height: 12em ;
+  background-color: #3B363D;
+  padding: 20px;
+  color: rgb(201, 201, 201);
+  font-size: 25px;
+  min-width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* margin: 0 auto; */
+  margin-top: 25px;
+      
+
+  
+
+}
+.g2 ol,.g2 a{
+  list-style-type: none;
+  text-decoration: none;
+  color: rgb(201, 201, 201);
+  text-transform: uppercase;
+}
+.g2 {
+  margin-left: 2em;
+ 
+      
+  }
+.g2 a:hover{
+  color: rgb(255, 255, 255);
+} 
+.g2 h2{
+  margin-bottom: 0.9em;
+}
+
+.g1{
+  margin-left: em;
+}
+.g1 h2{
+  padding-left: 50px;
+  margin-bottom: 0.9em;
+
+}
+.g1 p{
+  padding-left: 50px;
+  height: fit-content;
+  width: 20em;
+  font-size: 20px;
+}
+
+
+.g3{
+  margin-left:2em;
+  /* flex: none; */
+
+  
+}
+.g3 h2{
+  margin-bottom: 1em;
+
+}
+#email1{
+  color: #999999;
+  line-height: 0.5em;
+  size: 500px;
+  font-size: 1em;
+  margin: 0  1em 0  0;
+  border: solid 2px #999999;
+  background: none;
+  outline: none;
+}
+#submit{
+  color: #212121;
+  font-size: 1em;
+  line-height: 1em;
+  width: 125px;
+  padding: .3em 0.2em;
+  border: solid 1px #212121;
+  text-align: center;
+  margin: 0.5em 0 0 0;
+  background:  #b3bf06;
+  
+}
+#submit:hover{
+  background: transparent;
+  color: #FFFFFF;
+border: solid 1px #b3bf06;
+}
+.footer{
+      flex: none;
+      color: wheat;
+      height: 3em;
+      width: 100%;
+      text-align: center;
+      padding-top: 18px;
+      background-color: #212121;
+ }
